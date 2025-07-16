@@ -1,6 +1,6 @@
 # SPF/DMARC Scanner
 
-A fast and efficient scanner for identifying email spoofing vulnerabilities through SPF and DMARC record analysis on subdomains.
+A fast and efficient scanner for identifying email spoofing vulnerabilities through SPF and DMARC record analysis on domains.
 
 ## Features
 
@@ -38,12 +38,12 @@ go build -o espoofing espoofing.go
 
 ### Basic
 ```bash
-./espoofing subdomains.txt
+./espoofing domains.txt
 ```
 
 ### Advanced
 ```bash
-./espoofing subdomains.txt 50 10
+./espoofing domains.txt 50 10
 #                          ^   ^
 #                              |   timeout (seconds)
 #                                  threads
@@ -62,7 +62,7 @@ app.vulnerable-site.com
 ```
 [+] SPF/DMARC Scanner - Email Spoofing Vulnerability Checker
 [+] Threads: 20, Timeout: 5s
-[+] Scanning domains from: subdomains.txt
+[+] Scanning domains from: domains.txt
 ------------------------------------------------------------
 
 [*] Domain: mail.example.com
