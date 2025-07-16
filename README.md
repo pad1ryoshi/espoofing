@@ -38,14 +38,14 @@ go build -o espoofing espoofing.go
 
 ### Basic
 ```bash
-./spf-dmarc-scanner subdomains.txt
+./espoofing subdomains.txt
 ```
 
 ### Advanced
 ```bash
-./spf-dmarc-scanner subdomains.txt 50 10
-#                                  ^   ^
-#                                  |   timeout (seconds)
+./espoofing subdomains.txt 50 10
+#                          ^   ^
+#                              |   timeout (seconds)
 #                                  threads
 ```
 
